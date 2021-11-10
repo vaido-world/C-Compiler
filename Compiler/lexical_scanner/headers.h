@@ -6,7 +6,7 @@
 
 
 int     Line;
-int	Putback;
+int	    Putback;
 FILE	*Infile;
 
 
