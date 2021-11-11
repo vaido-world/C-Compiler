@@ -5,7 +5,10 @@ int     Line;
 int	    Putback;
 FILE	*Infile;
 
-
+static void init() {
+  Line = 1;
+  Putback = '\n';
+}
 
 #include "global_variables.c"
 #include "scan.c"
