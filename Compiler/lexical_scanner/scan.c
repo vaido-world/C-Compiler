@@ -70,7 +70,7 @@ static int skip(void) {
 static int chrpos(char *s, int letter) {
   char *p;
 
-  p = strchr(s, c);
+  p = strchr(s, letter);
   return (p ? p - s : -1);
 }
 
