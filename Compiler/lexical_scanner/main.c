@@ -28,6 +28,15 @@ static void scanfile() {
       printf(", value %d", T.intvalue);
     printf("\n");
   }
+  
+  puts("hello");
+  while (scan(&T)) {
+    printf("Token: %s", tokstr[T.token]);
+    if (T.token == T_INTLIT)
+      printf(", value %d", T.intvalue);
+    printf("\n");
+  }
+  
 }
 
 
