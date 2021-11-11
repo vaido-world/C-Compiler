@@ -68,7 +68,7 @@ static int skip(void) {
 
 // Return the position of character letter
 // in string s, or -1 if letter not found
-static int chrpos(char *s, int letter) {
+int static chrpos(char *s, int letter) {
   char *p;
 
   p = strchr(s, letter);
