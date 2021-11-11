@@ -1,4 +1,5 @@
 //gcc main.c scan.c
+// the job of the scanner is to identify the lexical elements, or tokens, in the input language.
 #include "headers.h"
 
 int     Line;
