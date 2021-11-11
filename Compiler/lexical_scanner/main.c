@@ -10,21 +10,40 @@ static void init() {
 }
 
 
-FILE	*Infile;
+	FILE	*Infile;
 #include "scan.c"
 #include "usage.c"
 
 
-// List of printable tokens
-const char *tokstr[] = { "+", "-", "*", "/", "intlit" };
+
 
 
 // Loop scanning in all the tokens in the input file.
 // Print out details of each token found.
 
 
-static void scanfile() {
+
+
+void main(int argc, char *argv[]) { 
+	  if (argc != 2)
+		usage(argv[0]);
+	
+  init();
+  
+
+  if ((Infile = fopen(argv[1], "r")) == NULL) {
+    fprintf(stderr, "Unable to open %s: %s\n", argv[1], strerror(errno));
+    exit(1);
+  }
+
+
+
   struct token T;
+
+
+
+  // List of printable tokens
+  const char *tokstr[] = { "+", "-", "*", "/", "intlit" };
 
   while (scan(&T)) {
     printf("Token: %s", tokstr[T.token]);
@@ -34,29 +53,6 @@ static void scanfile() {
   }
   
   puts("hello");
-  while (scan(&T)) {
-    printf("Token: %s", tokstr[T.token]);
-    if (T.token == T_INTLIT)
-      printf(", value %d", T.intvalue);
-    printf("\n");
-  }
-  
-}
-
-
-void main(int argc, char *argv[]) { 
-	  if (argc != 2)
-		usage(argv[0]);
-	
-  init();
-	
-  if ((Infile = fopen(argv[1], "r")) == NULL) {
-    fprintf(stderr, "Unable to open %s: %s\n", argv[1], strerror(errno));
-    exit(1);
-  }
-
-
-  // What file to scan???
-  scanfile();
+ 
   exit(0);
 }
