@@ -24,8 +24,6 @@ struct token {
 
 int scan(struct token *t);
 
-
-
 // Put back an unwanted character
 static void putback(int letter) {
   Putback = letter;
