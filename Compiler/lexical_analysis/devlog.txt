@@ -1,0 +1,625 @@
+Microsoft Windows [Version 10.0.19043.1288]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c
+lexical_scanner.c:3: warning: implicit declaration of function 'usage'
+tcc: error: undefined symbol 'usage'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c
+Usage: lexical_scanner.c infile
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c test
+lexical_scanner.c:9: error: 'Infile' undeclared
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c test
+lexical_scanner.c:12: warning: implicit declaration of function 'strerror'
+Unable to open test: No such file or directory
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c
+lexical_scanner.c:12: warning: implicit declaration of function 'strerror'
+Usage: lexical_scanner.c infile
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c
+Usage: lexical_scanner.c infile
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c test
+Unable to open test: No such file or directory
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input01
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input01
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+__line__Unable to open input0: No such file or directory
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: error: '__line__' undeclared
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: error: '__line__' undeclared
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: warning: assignment makes pointer from integer without a cast
+lexical_scanner.c:13: error: ',' expected (got ""Unable to open %s: %s\n"")
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: warning: assignment makes pointer from integer without a cast
+lexical_scanner.c:13: error: ',' expected (got ""Unable to open %s: %s\n"")
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+__LINE__Unable to open input0: No such file or directory
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+13 Unable to open input0: No such file or directory
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+13: Unable to open input0: No such file or directory
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+13: Unable to open input0: No such file or directory 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13: Unable to open input0: No such file or directory 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13: Unable to open File named input0: No such file or directory 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13: Unable to open File named 'input0': No such file or directory 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ errno:
+ Unable to open File named 'input0': No such file or directory 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ errno:
+  Unable to open File named 'input0': No such file or directory 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+^C
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+^C
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ errno: 2
+  Unable to open File named 'input0': No such file or directory
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory | 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory | errno 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory | [errno 2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory | [errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory
+| [errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory
+___________[errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to open File named 'input0': No such file or directory
+_[errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to Open File named 'input0': No such file or directory
+_[errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 13:
+ Unable to Open File named 'input0': No such file or directory.
+_[errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+On line 11898964:
+ Unable to Open File named 'input0': No such file or directory.
+_[errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: lexical_scanner.c On line 13:
+ Unable to Open File named 'input0': No such file or directory.
+_[errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c' On line 13:
+ Unable to Open File named 'input0': No such file or directory.
+_[errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+ On line 13:
+ Unable to Open File named 'input0': No such file or directory.
+_[errno=2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+ On line 13:
+ Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+ On line 13:
+  Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+ On line 13: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+ [On line ]13: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+ [On line 13]: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+[On line 13]: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On line 13: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+ Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Unable to Open File named 'input0':
+No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+ Error: Unable to Open File named 'input0':
+No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+ Error: Unable to Open File named  'input0':
+No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+ Error: Unable to Open File named 'input0':
+ No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+ Error: Unable to Open File named 'input0':  No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+ Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+ An Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+An Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File 'lexical_scanner.c':
+On Line 13:
+An Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File 'lexical_scanner.c':
+On Line 13:
+ Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File 'lexical_scanner.c':
+On Line 13:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File 'lexical_scanner.c':
+On Line 13: Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File 'lexical_scanner.c':
+On Line 13:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line: 13
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Error[2]: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Error: Unable to Open File named 'input0': No such file or directory. [2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Error: Unable to Open File named 'input0': [2] No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: error: 'infile' undeclared
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: error: struct or union expected
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: error: struct or union expected
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: error: struct or union expected
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 13:
+Error: Unable to Open File named 'input0': No such file or directory.  (null)
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:13: error: struct or union expected
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+lexical_scanner.c:15: error: struct or union expected
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 15:
+Error: Unable to Open File named 'input0': No such file or directory.  │!S
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 15:
+Error: Unable to Open File named 'input0': No such file or directory.  │![
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 15:
+Error: Unable to Open File named 'input0': No such file or directory.  │!₧
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 15:
+Error: Unable to Open File named 'input0': No such file or directory.  │!▒
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 15:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 15:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input0
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input0': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input01
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input01
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+Current working dir: C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis
+In File: 'lexical_scanner.c'
+On Line 17:
+Error: Unable to Open File named 'input': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+Current working dir: C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis
+In File: 'lexical_scanner.c'
+On Line 17:
+Error: Unable to Open File named [!2]'input': No such file or directory.
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+Current working dir: C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis
+In File: 'lexical_scanner.c'
+On Line 17:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+Current working dir: C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis
+In File: 'lexical_scanner.c'
+On Line 17:
+Error: Unable to Open File named 'input': No such file or directory. errno: 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+Current working dir: C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis
+In File: 'lexical_scanner.c'
+On Line 17:
+Error: Unable to Open File named 'input': No such file or directory. [errno: 2]
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+Current working dir: C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis
+In File: 'lexical_scanner.c'
+On Line 17:
+Error: Unable to Open File named 'input': No such file or directory. errno: 2
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+Current working dir: C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis
+In File: 'lexical_scanner.c'
+On Line 17:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Current working dir: C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Current working dir: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Current working directory: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+working directory: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Working directory: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Directory: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Directory: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Directory: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+ Directory: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+ Directory: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+ 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input\
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input\': No such file or directory. (errno: 2)
+'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'input\
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input\
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input\': No such file or directory. (errno: 2)
+'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'input\
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c inpu
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'inpu': No such file or directory. (errno: 2)
+'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'inpu
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input\
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input\': No such file or directory. (errno: 2)
+'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\'input\
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input\
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input\': No such file or directory. (errno: 2)
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input\
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input\
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input\': No such file or directory. (errno: 2)
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysisinput\
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input\
+lexical_scanner.c:18: warning: unknown escape sequence: '\%'
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input\': No such file or directory. (errno: 2)
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysisinput\
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input\
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input\': No such file or directory. (errno: 2)
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input\
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Info: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Info: File'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Info: File 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Info: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Info: The 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Info: Target: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Info: Target: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
+Info: Target: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+
+C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis>tcc -run lexical_scanner.c input
+In File: 'lexical_scanner.c'
+On Line 16:
+Info: Target: 'C:\Users\Juozas\Documents\GitHub\c-compiler\Compiler\lexical_analysis\input'
+Error: Unable to Open File named 'input': No such file or directory. (errno: 2)
