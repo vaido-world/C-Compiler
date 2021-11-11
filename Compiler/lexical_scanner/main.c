@@ -9,6 +9,8 @@ static void init() {
   puts("Initialising main.c");
 }
 
+
+FILE	*Infile;
 #include "scan.c"
 #include "usage.c"
 
@@ -19,6 +21,8 @@ const char *tokstr[] = { "+", "-", "*", "/", "intlit" };
 
 // Loop scanning in all the tokens in the input file.
 // Print out details of each token found.
+
+
 static void scanfile() {
   struct token T;
 
