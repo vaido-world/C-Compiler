@@ -78,7 +78,7 @@ int static chrpos(char *s, int letter) {
 // Scan and return an integer literal
 // value from the input file. Store
 // the value as a string in Text.
-static int scanint(int letter) {
+int static scanint(int letter) {
   int k, val = 0;
 
   // Convert each character into an int value
