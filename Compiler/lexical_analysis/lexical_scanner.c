@@ -13,11 +13,15 @@ void main(int argc, char *argv[])
 	FILE *Infile = Infile = fopen(argv[1], "r");
 	if (Infile == NULL) 
 	{
-		fprintf(stderr, "In File: '%s'  \nOn Line %i:  \nError: Unable to Open File named '%s': %s. (errno: 2) \n", __FILE__, __LINE__, argv[1], strerror(errno));
-		printf("Info: '");
+		printf("In File: '%s'  \nOn Line %i:  \n", __FILE__, __LINE__);
+		printf("Info: Target: '");
 		get_current_path();
 		printf("\\%s", argv[1]);
 		printf("'\n");
+		
+		fprintf(stderr, "Error: Unable to Open File named '%s': %s. (errno: 2) \n", argv[1], strerror(errno));
+		
+
 		// _[errno=%i]\n errno
 		exit(1);
 	}
