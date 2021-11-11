@@ -14,7 +14,7 @@ static void init() {
 
 
 // List of printable tokens
-char *tokstr[] = { "+", "-", "*", "/", "intlit" };
+const char *tokstr[] = { "+", "-", "*", "/", "intlit" };
 
 
 // Loop scanning in all the tokens in the input file.
