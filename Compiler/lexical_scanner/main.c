@@ -23,7 +23,7 @@ static void scanfile() {
   struct token T;
 
   while (scan(&T)) {
-    printf("Token %s", tokstr[T.token]);
+    printf("Token: %s", tokstr[T.token]);
     if (T.token == T_INTLIT)
       printf(", value %d", T.intvalue);
     printf("\n");
