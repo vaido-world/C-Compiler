@@ -1,4 +1,4 @@
-// tcc -run main.c input01
+// tcc -b -Wall -run main.c input01
 // the job of the scanner is to identify the lexical elements, or tokens, in the input language.
 #include "headers.h"
 
