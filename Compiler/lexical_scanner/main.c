@@ -10,7 +10,6 @@ static void init() {
   Putback = '\n';
 }
 
-#include "global_variables.c"
 #include "scan.c"
 #include "usage.c"
 
