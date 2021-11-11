@@ -19,7 +19,7 @@ void main(int argc, char *argv[])
 		fprintf(stderr, "Error: Unable to Open File named '%s': %s. (errno: 2) \n", argv[1], strerror(errno));
 		
 		
-		printf("Information: Target File ('");
+		printf("Note: Tried to Open File ('");
 		get_current_path();
 		printf("\\%s", argv[1]);
 		printf("')\n");
