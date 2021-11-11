@@ -31,18 +31,18 @@ static void putback(int letter) {
 
 // Get the next character from the input file.
 static int next(void) {
-  int c;
+  int letter;
 
   if (Putback) {		// Use the character put
-    c = Putback;		// back if there is one
+    letter = Putback;		// back if there is one
     Putback = 0;
-    return c;
+    return letter;
   }
 
-  c = fgetc(Infile);		// Read from input file
-  if ('\n' == c)
+  letter = fgetc(Infile);		// Read from input file
+  if ('\n' == letter)
     Line++;			// Increment line count
-  return c;
+  return letter;
 }
 
 
@@ -64,9 +64,9 @@ static int skip(void) {
 }
 
 
-// Return the position of character c
-// in string s, or -1 if c not found
-static int chrpos(char *s, int c) {
+// Return the position of character letter
+// in string s, or -1 if letter not found
+static int chrpos(char *s, int letter) {
   char *p;
 
   p = strchr(s, c);
