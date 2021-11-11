@@ -30,6 +30,7 @@ static void putback(int letter) {
 }
 
 // Get the next character from the input file.
+FILE	*Infile;
 static int next(void) {
   int letter;
 
