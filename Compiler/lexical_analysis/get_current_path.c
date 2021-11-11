@@ -12,7 +12,7 @@
 #endif
 
 
-#include <windows.h>
+
 
 int get_current_path(){
 	char cwd[PATH_MAX];
@@ -27,9 +27,13 @@ int get_current_path(){
 	return 0;
 }
 
+#ifndef main
+#define main main
 int main() {
+	printf(__FILE__);
 	get_current_path();
 
    
    return 0;
 }
+#endif
