@@ -24,7 +24,7 @@ struct token {
 
 int scan(struct token *t);
 
-// Put back an unwanted character
+// 1. Put back an unwanted character
 static void putback(int letter) {
   Putback = letter;
 }
@@ -33,6 +33,7 @@ static void putback(int letter) {
 static int next(void) {
   int letter;
 
+   // 2. Put back an unwanted character
   if (Putback) {		// Use the character put
     letter = Putback;		// back if there is one
     Putback = 0;
