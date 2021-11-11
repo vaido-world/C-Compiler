@@ -2,13 +2,11 @@
 // the job of the scanner is to identify the lexical elements, or tokens, in the input language.
 #include "headers.h"
 
-int     Line;
-int	    Putback;
-FILE	*Infile;
+int     Line = 1;
+int	    Putback = '\n';
 
 static void init() {
-  Line = 1;
-  Putback = '\n';
+  puts("Initialising main.c");
 }
 
 #include "scan.c"
