@@ -51,6 +51,8 @@ void main(int argc, char *argv[]) {
     exit(1);
   }
 
+
+  // What file to scan???
   scanfile();
   exit(0);
 }
