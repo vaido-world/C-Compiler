@@ -1,7 +1,15 @@
 //gcc main.c scan.c
-
-
 #include "headers.h"
+
+int     Line;
+int	    Putback;
+FILE	*Infile;
+
+
+
+#include "global_variables.c"
+#include "scan.c"
+#include "usage.c"
 
 
 // List of printable tokens
