@@ -17,20 +17,29 @@ void main(int argc, char *argv[])
 
 		fprintf(stderr, "Error: Unable to Open File named '%s': %s. (errno: 2) \n", argv[1], strerror(errno));
 		
-
-		//printf("Opening file ('");
-		printf("|For: fopen('");
-		get_current_path();
-		printf("\\%s", argv[1]);
-		printf("', 'r');\n");
 		
-		
+		#include <ctype.h>
 		// Relative Path Error Note
 		// If there is no / at the beginning of the input:
 		// If there is no :\ as part of input
 		// If starts with alphabet letter
 		// If there is ./ at the beginning of the input:
+		if (isalnum(argv[1][0]) && argv[1][1] == ':') { 
 
+			printf("%s", argv[1]);
+			puts("test");	
+		
+
+		} else {
+			//printf("Opening file ('");
+			printf("|For: fopen('");
+			get_current_path();
+			printf("\\%s", argv[1]);
+			printf("', 'r');\n");
+		
+		}
+
+		
 
 		
 		// Absolute Path Error Note
