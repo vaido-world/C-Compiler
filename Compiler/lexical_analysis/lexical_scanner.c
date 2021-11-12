@@ -19,6 +19,8 @@ void main(int argc, char *argv[])
 		
 		
 		
+		// tcc -run lexical_scanner.c c:/test
+		// tcc -run lexical_scanner.c c:/
 		// tcc -run lexical_scanner.c c:asd
 		// Absolute Path Error Note
 		// Simply print the input path
