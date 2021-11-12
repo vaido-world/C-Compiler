@@ -29,7 +29,8 @@ void main(int argc, char *argv[])
 		#include <ctype.h>
 		if (isalpha(argv[1][0]) && argv[1][1] == ':' && argv[1][2] == '/') { 
 		if (argv[1][3] == '\0'){
-			printf("Does not contain filename.");
+			printf("Does not contain filename.\n");
+			printf("Drive folder is passed instead of a path to a folder.\n ");
 			
 		}
 			printf("|For: fopen('");
