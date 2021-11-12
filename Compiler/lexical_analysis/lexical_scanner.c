@@ -29,6 +29,7 @@ void main(int argc, char *argv[])
 			printf("|For: fopen('");
 			printf("%s", argv[1]);
 			printf("', 'r');\n");
+			printf("asd");
 		
 		// tcc -run lexical_scanner.c asd
 		// Relative Path Error Note
@@ -42,7 +43,7 @@ void main(int argc, char *argv[])
 			get_current_path();
 			printf("\\%s", argv[1]);
 			printf("', 'r');\n");
-		
+			printf("123");
 		}
 
 		
