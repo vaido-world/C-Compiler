@@ -13,15 +13,17 @@ void main(int argc, char *argv[])
 	FILE *Infile = Infile = fopen(argv[1], "r");
 	if (Infile == NULL) 
 	{
-		printf("In File: '%s'  \nOn Line %i:  \n", __FILE__, __LINE__);
+		printf("In File: '%s'  \n|On Line %i:  \n", __FILE__, __LINE__);
+
+		fprintf(stderr, "|Error: Unable to Open File named '%s': %s. (errno: 2) \n", argv[1], strerror(errno));
+		
 
 		//printf("Opening file ('");
-		printf(" ('");
+		printf("|At: fopen('");
 		get_current_path();
 		printf("\\%s", argv[1]);
-		printf("')\n");
+		printf("', 'r')\n");
 		
-		fprintf(stderr, "Error: Unable to Open File named '%s': %s. (errno: 2) \n", argv[1], strerror(errno));
 		
 		// Relative Path Error Note
 		// If there is no / at the beginning of the input:
