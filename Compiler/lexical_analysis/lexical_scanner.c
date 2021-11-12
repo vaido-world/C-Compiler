@@ -20,18 +20,22 @@ void main(int argc, char *argv[])
 		
 		
 		// tcc -run lexical_scanner.c c:asd
+		// Absolute Path Error Note
+		// Simply print the input path
+		// Print which path subfolder is inaccesible
+
 		#include <ctype.h>
-		// Relative Path Error Note
-		// If there is no / at the beginning of the input:
-		// If there is no :\ as part of input
-		// If starts with alphabet letter
-		// If there is ./ at the beginning of the input:
 		if (isalnum(argv[1][0]) && argv[1][1] == ':' && argv[1][1] == '//') { 
 			printf("|For: fopen('");
 			printf("%s", argv[1]);
 			printf("', 'r');\n");
 		
 		// tcc -run lexical_scanner.c asd
+		// Relative Path Error Note
+		// If there is no / at the beginning of the input:
+		// If there is no :\ as part of input
+		// If starts with alphabet letter
+		// If there is ./ at the beginning of the input:
 		} else {
 			//printf("Opening file ('");
 			printf("|For: fopen('");
@@ -43,10 +47,6 @@ void main(int argc, char *argv[])
 
 		
 
-		
-		// Absolute Path Error Note
-		// Simply print the input path
-		// Print which path subfolder is inaccesible
 
 		// _[errno=%i]\n errno
 		
