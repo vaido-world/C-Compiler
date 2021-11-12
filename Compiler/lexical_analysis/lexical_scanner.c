@@ -21,6 +21,7 @@ void main(int argc, char *argv[])
 		// Relative Path Error Note
 		// If there is no / at the beginning of the input:
 		// If there is no :\ as part of input
+		// If starts with alphabet letter
 		// If there is ./ at the beginning of the input:
 		
 		printf("Note: Tried to Open File ('");
