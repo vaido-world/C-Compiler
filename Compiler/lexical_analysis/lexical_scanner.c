@@ -25,7 +25,7 @@ void main(int argc, char *argv[])
 		// Print which path subfolder is inaccesible
 
 		#include <ctype.h>
-		if (isalnum(argv[1][0]) && argv[1][1] == ':' && argv[1][1] == '//') { 
+		if (isalpha(argv[1][0]) && argv[1][1] == ':' && argv[1][1] == '//') { 
 			printf("|For: fopen('");
 			printf("%s", argv[1]);
 			printf("', 'r');\n");
