@@ -15,7 +15,7 @@ void main(int argc, char *argv[])
 	{
 		printf("In File: '%s'  \n|On Line %i: ", __FILE__, __LINE__);
 
-		fprintf(stderr, "Error: Unable to Open File named '%s': %s. (errno: 2) \n", argv[1], strerror(errno));
+		fprintf(stderr, "Error: Unable to Open File named '%s': %s. (errno: %i) \n", argv[1], strerror(errno), errno);
 		
 		
 		
@@ -26,7 +26,7 @@ void main(int argc, char *argv[])
 		// If there is no :\ as part of input
 		// If starts with alphabet letter
 		// If there is ./ at the beginning of the input:
-		if (isalnum(argv[1][0]) && argv[1][1] == ':') { 
+		if (isalnum(argv[1][0]) && argv[1][1] == ':' && argv[1][1] == '//') { 
 			printf("|For: fopen('");
 			printf("%s", argv[1]);
 			printf("', 'r');\n");
