@@ -23,8 +23,8 @@ void main(int argc, char *argv[])
 		// If there is no :\ as part of input
 		// If starts with alphabet letter
 		// If there is ./ at the beginning of the input:
-		
-		printf("Note: Tried to Open File ('");
+		puts("");
+		printf("Note: Targeting to Open File ('");
 		get_current_path();
 		printf("\\%s", argv[1]);
 		printf("')\n");
