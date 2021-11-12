@@ -28,6 +28,10 @@ void main(int argc, char *argv[])
 
 		#include <ctype.h>
 		if (isalpha(argv[1][0]) && argv[1][1] == ':' && argv[1][2] == '/') { 
+		if (argv[1][3] == '\0'){
+			printf("Does not contain filename.");
+			
+		}
 			printf("|For: fopen('");
 			printf("%s", argv[1]);
 			printf("', 'r');\n");
